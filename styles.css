@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter/inter-variablefont_slntwght-webfont.woff2') format('woff2'),
+         url('/fonts/Inter/inter-variablefont_slntwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mark Pro";
+    src: url("fonts/Mark\ Pro/7200c6dd8ac604abe09f5159e53a40c0.eot");
+    src: url("fonts/Mark\ Pro/7200c6dd8ac604abe09f5159e53a40c0.eot?#iefix")format("embedded-opentype"),
+        url("fonts/Mark\ Pro/7200c6dd8ac604abe09f5159e53a40c0.woff")format("woff"),
+        url("fonts/Mark\ Pro/7200c6dd8ac604abe09f5159e53a40c0.woff2")format("woff2"),
+        url("fonts/Mark\ Pro/7200c6dd8ac604abe09f5159e53a40c0.ttf")format("truetype"),
+        url("fonts/Mark\ Pro/7200c6dd8ac604abe09f5159e53a40c0.svg#Mark Pro")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    box-sizing: border-box;
+}
+
+p{
+    border-radius: 5px;
+    font-family: Mark Pro, sans-serif;
+    color:rgba(46, 45, 44, 0.65);
+    background-color: violet;
+}
+
+
+h3 {
+
+    background: rgba(235, 212, 11, 0.3);
+    margin: 10px;
+    width: auto;
+    background-color: violet;
+}
+
+h2{background-color: violet;}
+
+.container{
+    box-sizing: border-box;
+    word-wrap: break-word;
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+
+.slides {
+    width: 100%;
+    min-height: calc(100vh - 60px); /* Adjust the value based on your header's height */
+    color: #444343;
+    scroll-snap-align: start;
+}
+
+.slide-content-principal {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding-top: 20px;
+    
+}
+
+.slide-content-left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    scroll-snap-align: start;
+    padding-top: 20px;
+}
+
+.slide-content-right{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    padding-right: 100px;
+    scroll-snap-align: start;
+    padding-top: 20px;
+}
+
+.seccionExplicativa {
+    width: 560px;
+    padding:40px;
+}
+
+.seccionExplicativa p{
+    font-size: 1.25rem;
+}
+
+.seccionExplicativa h2{
+    font-size: 31px;
+}
+
+.seccionExplicativa h3{
+    font-size: 27px;
+}
+
+.slide-content-principal .seccionExplicativa {
+    width: 860px;
+}
+
+/*Imagenes*/
+.ImagenesCentro {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.ImagenesLeft {
+    text-align: left;
+    justify-content: left;
+    align-content: left;
+}
+
+
+.ImagenesRight {
+    text-align: right;
+    justify-content: right;
+    align-content: right;
+}
+
+.contentVideoSlide h1 {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.videoSlide{
+    border-radius: 8px;
+    margin-left: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.youtubeIframe{
+    border: none;
+    border-radius: 15px;
+    width:900px;
+    height:410px;
+    transition: border 0.3s;
+}
+
+.youtubeIframe:hover {
+    border: 2px solid #ffffff; /* Add a border when hovering */
+  }
+
+.slidePrincipial {
+    height: 100vh;
+    background-image: url(https://web-assets.esetstatic.com/tn/-x425/wls/2021/08/por-qu%C3%A9-compa%C3%B1%C3%ADas-videojuegos-son-blanco-atractivo-cibercriminales.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide2{ /*Parte de OW*/
+    background: rgb(93, 17, 233);
+    background: linear-gradient(135deg, rgb(154, 17, 233), rgb(226, 212, 12));
+    /*background-image: url("/img/owLogo.png");
+    background-attachment: scroll;
+    background-size: 150px;
+    background-repeat:round;*/
+}
+
+.slide3{ /*Parte de LOL*/
+    background: linear-gradient(0deg, #0A323C, #166fdd);
+}
+
+.slide4{ /*Parte de CS*/
+    background: linear-gradient(0deg, rgb(80, 3, 3),rgb(206, 110, 20));
+}
+
+
+/* CAMBIAR CAMBIAR TEST DEV*/
+
+header {
+    background-color: #333; /* Background color for the header */
+    text-align: center; /* Center-align the contents within the header */
+    padding: 10px; /* Add padding for spacing */
+    position: fixed;
+    width: 98.9%;
+}
+
+/* Style the navigation links */
+nav {
+    display: flex; /* Make the navigation links a flex container */
+    justify-content: center; /* Center-align the navigation links horizontally */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Text color for links */
+    padding: 10px 20px; /* Add padding to the links for spacing */
+}
+
+nav a:hover {
+    background-color: #555; /* Background color when hovering over links */
+}
+
+body{
+    /*Eu cock, no era el header el que tenia esa barra toda bugeada fuera de la principal, era
+    el body, yo por las dudas te dejo escrito aca esto*/
+    overflow: hidden; /*No queremos la barra de overflow aca.*/
+    background-color: #181a1b;
+}
+
+
+/*Botones Drop-Down*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color:#ffffff;
+    padding: 10px 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    box-shadow: 0px 8px 16px 0px rgba(94, 94, 94, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover{
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display:grid;
+    justify-content: center;
+}

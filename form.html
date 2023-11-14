@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!--Hoja de estilos CSS-->
+    <style id="hojadeestiloscss">
+        body{
+            background-color: black;
+        }
+        .formulario{
+            line-height: 50px;
+            border: 2px ridge rgb(255, 255, 255);
+            background-color: rgb(11, 2, 36);
+            background-image: url("paginafondo.png");
+            font-family: Inter, sans-serif;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="formulario">
+            <!--FORMULARIO-->
+            <form id="form_mensaje" method="post">
+                <ul>
+                    <!--Nombre y Apelido-->
+                    <li><label for="name">Nombre y Apellido:</label>
+                    <input type="text" id="name" name="dato_nomape"/></li>
+
+                    <!--Fecha de Nacimiento-->
+                    <li><label for="name">Fecha de Nacimiento:</label>
+                    <input type="date" id="name" name="dato_fecha"/></li>
+                    
+                    <!--DNI-->
+                    <li><label for="name">Numero de Documento:</label>
+                    <input type="text" id="name" name="dato_dni"/></li>
+
+                    <!--Telefono-->
+                    <li><label for="name">Telefono en Linea:</label>
+                    <input type="text" id="name" name="dato_tel"/></li>
+
+                    <!--Celular-->
+                    <li><label for="name">Numero de Celular:</label>
+                    <input type="text" id="name" name="dato_cel"/></li>
+
+                    <!--Email-->
+                    <li><label for="name">Email:</label>
+                    <input type="email" id="name" name="dato_mail"/></li>
+
+                    <!--Asunto-->
+                    <li><label for="name">Asunto:</label>
+                    <input type="text" id="name" name="dato_asu"/></li>
+                    
+                    <!--Mensaje-->
+                    <li><label for="name">Mensaje:</label>
+                    <textarea id="msg" name="dato_mens"></textarea></li>
+                </ul>
+
+                <center>
+                    <input type="submit" value="Enviar Datos">
+                </center>
+            </form>
+        </div>
+
+    </body>
+</html>
