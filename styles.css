@@ -269,11 +269,9 @@ header {
 } cagada*/
 
 .BannerHeadder{
-    height:40px;
+    height:10px;
     width:400px;
-    padding-top: -10px;
-    margin-left: 10%;
-    background-color: #FF1A27;
+    margin-left: 2%;
     text-align: start;
 }
 
@@ -287,15 +285,22 @@ nav {
 nav a {
     text-decoration: none;
     color: #fff;
-    padding: 10px 20px;
+    font-family: Mark Pro, sans-serif;
+}
 
+
+.dropdown a {
+    padding: 10px 20px;
+    font-family: Inter, sans-serif;
 }
 
 nav dropdown a:hover {
     background-color: #555;
-    
 }
 
+.formButton {
+    margin-left: 2%;
+}
 
 /*Botones Drop-Down*/
 .dropdown {
@@ -303,9 +308,6 @@ nav dropdown a:hover {
     display: inline-block;
     color:#ffffff;
     padding: 10px 20px;
-    font-family: Mark Pro, sans-serif;
-
-
 }
 
 .dropdown-content {
