@@ -6,75 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Información de los videojuegos</title>
-    <link rel="icon" type="image/x-icon"
-        href="img/logoColegio.png">
+    <link rel="icon" type="image/x-icon" href="img/logoColegio.png">
 </head>
 
 <body>
 
     <script src="scripts.js"></script>
-    
+
 
     <div class="container">
-
         <header>
             <nav>
                 <a class="toTop" href="javascript:void(0);" onclick="ajustarDesplazamiento('topStart')">Inicio</a>
+                <div class="left">
+                    <div class="dropdown">
+                        <a href="javascript:void(0);" onclick="ajustarDesplazamiento('owSectStart')">Overwatch</a>
+                        <div class="dropdown-content">
+                            <a href="javascript:void(0);" onclick="ajustarDesplazamiento('owEntorno')">
+                                Entorno personalizable
+                            </a>
+                            <a href="javascript:void(0);" onclick="ajustarDesplazamiento('owFormApl')">
+                                Formas de aplicación
+                            </a>
+                            <a href="javascript:void(0);" onclick="ajustarDesplazamiento('owLimits')">
+                                Limitaciones
+                            </a>
+                        </div>
+                    </div>
     
-                <div class="dropdown">
-                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('owSectStart')">Overwatch</a>
-                    <div class="dropdown-content">
-                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('owEntorno')">
-                        Entorno personalizable
-                    </a>
-                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('owFormApl')">
-                        Formas de aplicación
-                    </a>
-                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('owLimits')">
-                        Limitaciones
-                    </a>
-                </div>
-                </div>
+                    <div class="dropdown">
+                        <a href="javascript:void(0);" onclick="ajustarDesplazamiento('lolSectStart')">
+                            League Of Legends
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="javascript:void(0);" onclick="ajustarDesplazamiento('lolComp')">
+                                Competencia
+                            </a>
+                            <a href="javascript:void(0);" onclick="ajustarDesplazamiento('lolEsports')">
+                                Esports
+                            </a>
+                        </div>
+                    </div>
     
-                <div class="dropdown">
-                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('lolSectStart')">
-                        League Of Legends
-                    </a>
-                    <div class="dropdown-content">
-                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('lolComp')">
-                        Competencia
-                    </a>
-                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('lolEsports')">
-                        Esports
-                    </a>
+                    <div class="dropdown">
+                        <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csSectStart')">
+                            Counter Strike
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csAnticheat')">
+                                Anti-cheat
+                            </a>
+                            <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csDetectCheat')">
+                                Detección trampas
+                            </a>
+                            <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csSubtick')">
+                                Subtick
+                            </a>
+                            <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csSubtickNews')">
+                                Novedades Subtick
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="right">
+                    <marquee>Preparate porque los viernes de jungla se van a todo ojete</marquee>
                 </div>
-    
-                <div class="dropdown">
-                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csSectStart')">
-                        Counter Strike
-                    </a>
-                    <div class="dropdown-content">
-                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csAnticheat')">
-                        Anti-cheat
-                    </a>
-                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csDetectCheat')">
-                        Detección trampas
-                    </a>
-                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csSubtick')">
-                        Subtick
-                    </a>
-                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csSubtickNews')">
-                        Novedades Subtick
-                    </a>
-                </div>
-                </div>
-    
                 <!--<button onclick="abrirFormulario()">Envia un mail con tu sugerencias!</button> NO DESCOMENTAR ESTO -->
             </nav>
         </header>
-        
+
         <section class="slides slidePrincipial" id="id_in">
+
             <article class="slide-content-principal">
                 <article class="seccionExplicativa">
                     <h1 id="topStart">Desarrollo, historia y seguridad de los videojuegos</h1>
@@ -92,44 +95,47 @@
                     </article>
                 </article>
             </article>
-            
+
 
             <div class="slide-content-principal">
-            <div class="contentImageSlide">
-                <a href="javascript:void(0);" onclick="ajustarDesplazamiento('owSectStart')" class="imageSlide">
-                    <img class="imageAdentro" src="img/owLogo.png">
-                </a>
-                <a href="javascript:void(0);" onclick="ajustarDesplazamiento('lolSectStart')" class="imageSlide">
-                    <img class="imageAdentro" src="img/lolLogo.png">
-                </a>
-                <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csSectStart')" class="imageSlide">
-                    <img class="imageAdentro" src="img/csLogo.png">
-                </a>
+                <div class="contentImageSlide">
+                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('owSectStart')" class="imageSlide">
+                        <img class="imageAdentro" src="img/owLogo.png">
+                    </a>
+                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('lolSectStart')" class="imageSlide">
+                        <img class="imageAdentro" src="img/lolLogo.png">
+                    </a>
+                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csSectStart')" class="imageSlide">
+                        <img class="imageAdentro" src="img/csLogo.png">
+                    </a>
+                </div>
             </div>
-            </div> 
 
-            <img class="separador" src="https://media.discordapp.net/attachments/494260215617945601/1174400134096900116/SeparadorEntrada.png?ex=6567745b&is=6554ff5b&hm=46629f4b32a1dcbcbc8147bdeaf805876fefd1eaab5739fbe9ffcf8270217ad5&=">
+            <img class="separador"
+                src="https://media.discordapp.net/attachments/494260215617945601/1174400134096900116/SeparadorEntrada.png?ex=6567745b&is=6554ff5b&hm=46629f4b32a1dcbcbc8147bdeaf805876fefd1eaab5739fbe9ffcf8270217ad5&=">
         </section>
 
         <!--COCKING-->
 
         <!--Separador-->
         <section class="slides slide2" id="id_ow">
-            
-            <img class="separador" src="https://media.discordapp.net/attachments/494260215617945601/1174400133807480903/SeparadorSalida.png?ex=6567745b&is=6554ff5b&hm=0ca5f2000b246776160ad7a51c0e9a40dc97b7396baee94b66276d33b6223fe7&=">
+
+            <img class="separador"
+                src="https://media.discordapp.net/attachments/494260215617945601/1174400133807480903/SeparadorSalida.png?ex=6567745b&is=6554ff5b&hm=0ca5f2000b246776160ad7a51c0e9a40dc97b7396baee94b66276d33b6223fe7&=">
 
             <div class="slide-content-principal">
-            <article class="seccionExplicativa">
-                <h1 id="owSectStart">Overwatch</h1>
-                <div class="textoExplicativo">
-                    <p>
-                        Overwatch es un juego de disparos en primera persona (FPS) en línea, desarrollado por 
-                        Blizzard Entertainment. Se destaca por su enfoque en equipos de cinco jugadores, cada uno 
-                        seleccionando un personaje con habilidades únicas. El objetivo varía según el modo de juego, 
-                        pero generalmente implica cumplir misiones, defender o capturar puntos, y trabajar en conjunto para ganar. 
-                        Combina acción intensa con estrategia y tiene un elenco diverso de héroes para elegir.
-                    </p>
-                </div>
+                <article class="seccionExplicativa">
+                    <h1 id="owSectStart">Overwatch</h1>
+                    <div class="textoExplicativo">
+                        <p>
+                            Overwatch es un juego de disparos en primera persona (FPS) en línea, desarrollado por
+                            Blizzard Entertainment. Se destaca por su enfoque en equipos de cinco jugadores, cada uno
+                            seleccionando un personaje con habilidades únicas. El objetivo varía según el modo de juego,
+                            pero generalmente implica cumplir misiones, defender o capturar puntos, y trabajar en
+                            conjunto para ganar.
+                            Combina acción intensa con estrategia y tiene un elenco diverso de héroes para elegir.
+                        </p>
+                    </div>
             </div>
             </article>
             <div class="slide-content-left">
@@ -161,22 +167,24 @@
             <div class="slide-content-left">
                 <div class="seccionExplicativa">
                     <div class="subtituloExplicativo">
-                        <h3 id="owFormApl">Formas de aplicacion</h3></div>
+                        <h3 id="owFormApl">Formas de aplicacion</h3>
+                    </div>
 
                     <div class="textoExplicativo">
                         <p>
-                            Algo llamativo y bastante interesante de como se aplican las modificaciones 
-                            en Overwatch Workshop es que puedes escribir las instrucciones como si fuera 
+                            Algo llamativo y bastante interesante de como se aplican las modificaciones
+                            en Overwatch Workshop es que puedes escribir las instrucciones como si fuera
                             un codigo de cierto lenguaje de programacion, ejemplo grafico es lo siguiente:
                         </p>
-                        
+
                     </div>
                 </div>
             </div>
-            
+
             <section class="Imagenes">
                 <div class=" imagenesTarjeta">
-                    <img width=auto height=200px src="https://templatepocket.com/wp-content/uploads/2019/12/overwatch-6-800x365.png">
+                    <img width=auto height=200px
+                        src="https://templatepocket.com/wp-content/uploads/2019/12/overwatch-6-800x365.png">
                 </div>">
             </section>
 
@@ -215,19 +223,19 @@
                         </p>
 
 
-                        <li> 
+                        <li>
                             En una partida no pueden haber mas de 12 jugadores reales. (sin contar jugadores
                             artificiales)
                         </li>
-                        <li> 
-                            No pueden haber mas de 256 cadenas de texto en una partida. 
+                        <li>
+                            No pueden haber mas de 256 cadenas de texto en una partida.
 
                         </li>
                         <li> No pueden haber mas de 256 efectos especiales que no sean de los personajes dentro de una
-                            partida. 
+                            partida.
                         </li>
                         <br>
-                        
+
                         <P>Esto sin olvidar por ejemplo que la partida se cae en caso de sobreusar las acciones del
                             Workshop.
                         </P>
@@ -242,9 +250,14 @@
                 <article class="seccionExplicativa">
                     <h2>Conclusión</h2>
                     <div class="textoExplicativo">
-                        <p>El Overwatch Workshop es una herramienta de creación de contenido que permite a los jugadores personalizar reglas, modos de juego y mecánicas dentro de Overwatch. 
-                            Introducido por Blizzard, este taller brinda a la comunidad la capacidad de diseñar experiencias únicas, desde modos de juego divertidos hasta entrenamientos especializados. Es una forma innovadora de ampliar la diversidad y creatividad en el juego, permitiendo a los jugadores experimentar con nuevas ideas y compartir sus creaciones con la comunidad. 
-                            En esencia, el Workshop ha contribuido significativamente a la versatilidad y longevidad del juego al proporcionar una plataforma para la inventiva de los jugadores.
+                        <p>El Overwatch Workshop es una herramienta de creación de contenido que permite a los jugadores
+                            personalizar reglas, modos de juego y mecánicas dentro de Overwatch.
+                            Introducido por Blizzard, este taller brinda a la comunidad la capacidad de diseñar
+                            experiencias únicas, desde modos de juego divertidos hasta entrenamientos especializados. Es
+                            una forma innovadora de ampliar la diversidad y creatividad en el juego, permitiendo a los
+                            jugadores experimentar con nuevas ideas y compartir sus creaciones con la comunidad.
+                            En esencia, el Workshop ha contribuido significativamente a la versatilidad y longevidad del
+                            juego al proporcionar una plataforma para la inventiva de los jugadores.
                         </p>
                     </div>
                 </article>
@@ -261,12 +274,17 @@
                     <h1 id="lolSectStart">League Of Legends</h1>
                     <div class="textoExplicativo">
                         <p>
-                            League of Legends (LoL) es un popular juego en línea gratuito, clasificado como un MOBA (Multiplayer Online Battle Arena). Desarrollado por Riot Games, el juego enfrenta a dos equipos de cinco jugadores cada uno, controlando personajes llamados "campeones", con el objetivo de destruir el nexo enemigo ubicado en su base. Cada campeón tiene habilidades únicas y se fortalece durante la partida, adquiriendo oro y experiencia. 
-                            La estrategia, trabajo en equipo y toma de decisiones son fundamentales para ganar partidas en este juego altamente competitivo.    
+                            League of Legends (LoL) es un popular juego en línea gratuito, clasificado como un MOBA
+                            (Multiplayer Online Battle Arena). Desarrollado por Riot Games, el juego enfrenta a dos
+                            equipos de cinco jugadores cada uno, controlando personajes llamados "campeones", con el
+                            objetivo de destruir el nexo enemigo ubicado en su base. Cada campeón tiene habilidades
+                            únicas y se fortalece durante la partida, adquiriendo oro y experiencia.
+                            La estrategia, trabajo en equipo y toma de decisiones son fundamentales para ganar partidas
+                            en este juego altamente competitivo.
                         </p>
                     </div>
-                </div>
-                </article>
+            </div>
+            </article>
 
             <div class="slide-content-right">
                 <div class="seccionExplicativa">
@@ -357,7 +375,8 @@
                     <div class="textoExplicativo">
                         <p>
                             Counter Strike es un juego desarrollado por Valve Corporation, este juego lleva más de 20
-                            años en el mercado. First Person Shooter (Juego de disparos en primera persona), con tematica anti-terroristas contra terroristas, equipo de 5 contra 5
+                            años en el mercado. First Person Shooter (Juego de disparos en primera persona), con
+                            tematica anti-terroristas contra terroristas, equipo de 5 contra 5
                             donde el primero en llegar a las 16 rondas ganadas gana el juego.
                         </p>
                     </div>
@@ -489,16 +508,18 @@
                 </div>
             </div>
 
-            <img class="separador" src="https://media.discordapp.net/attachments/494260215617945601/1174400134096900116/SeparadorEntrada.png?ex=6567745b&is=6554ff5b&hm=46629f4b32a1dcbcbc8147bdeaf805876fefd1eaab5739fbe9ffcf8270217ad5&=">
+            <img class="separador"
+                src="https://media.discordapp.net/attachments/494260215617945601/1174400134096900116/SeparadorEntrada.png?ex=6567745b&is=6554ff5b&hm=46629f4b32a1dcbcbc8147bdeaf805876fefd1eaab5739fbe9ffcf8270217ad5&=">
         </section>
 
-        <footer class ="footer">
+        <footer class="footer">
             <section class="g1">
                 <article class="logofoot">
                     <figure>
                         <a href="#">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Valve-logo.jpg/1024px-Valve-logo.jpg">
-                        </ahref>
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Valve-logo.jpg/1024px-Valve-logo.jpg">
+                            </ahref>
                     </figure>
                 </article>
                 <article class="t2">
@@ -515,7 +536,8 @@
                 </article>
             </section>
             <section class="g2">
-                <small>&copy; 2023 <b>Luciano Buccella - Mateo Soto - Julian Sandes - Rodrigo Gorno </b> - Derechos reservados.</small>
+                <small>&copy; 2023 <b>Luciano Buccella - Mateo Soto - Julian Sandes - Rodrigo Gorno </b> - Derechos
+                    reservados.</small>
             </section>
         </footer>
 
