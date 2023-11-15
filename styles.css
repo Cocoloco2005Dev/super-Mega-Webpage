@@ -344,7 +344,9 @@ nav dropdown a:hover {
 }
 
 .footer .g1 .logofoot figure img{
-    width: 350px;
+    display: inline-block;
+    width: 115px;
+    height: 75px;
 }
 
 .footer .g1 .t4 a{
@@ -360,15 +362,33 @@ nav dropdown a:hover {
     color: #166fdd;
 }
 
-.footer .g1 .t3 button{
-    display: inline-block;
-    text-decoration: none;
+.footer button{
     width: 150px;
     height: 45px;
-    line-height: 45px;
-    text-align: center;
-    margin: auto;
 }
+
+.footer .g1 .t4 .ghublb img{
+    width: 50px;
+    height: 45px;
+
+
+}
+
+.footer .g1 .t4 .ghubms img{
+    width: 50px;
+    height: 45px;
+}
+
+.footer .g1 .t4 .ghubjs img{
+    width: 50px;
+    height: 45px;
+}
+
+.footer .g1 .t4 .ghubrg img{
+    width: 50px;
+    height: 45px;
+}
+
 
 .separador{
     width: 100%;
