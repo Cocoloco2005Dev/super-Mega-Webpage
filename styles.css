@@ -137,11 +137,13 @@ body{
 
 .seccionExplicativa li{
     font-size: 1.25rem;
-    background-color: rgb(56, 65, 110);
+    color:rgba(204, 199, 192, 0.65);
+    background-color: rgb(87, 70, 87);
     border:rgb(204, 204, 204) outset;
     /*border-radius: 100%;*/
     padding: 5px 10px;
     margin-bottom: 10px;
+    font-family: Mark Pro, sans-serif;
 }
 
 .seccionExplicativa h2{
@@ -191,15 +193,10 @@ body{
     margin-bottom: 20px;
 }
 
-.contentImageSlide {
-
-}
-
 .imageSlideBOX{
     border-radius: 8px;
     display: inline-block;
-    width: 400px;
-    height: 350px;
+    height: 30vh;
     margin-bottom: 20px;
 }
 
@@ -264,6 +261,7 @@ header {
     transition: top 0.3s;
     border-bottom: thick double #707070;
     z-index: 999999;
+    font-family: Inter, sans-serif;
 }
 
 /*header .left{
@@ -283,16 +281,19 @@ header {
 nav {
     display: flex; /* Make the navigation links a flex container */
     justify-content: left; /* Center-align the navigation links horizontally */
+    font-family: Inter, sans-serif;
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
     padding: 10px 20px;
+
 }
 
-nav a:hover {
-    background-color: #555; 
+nav dropdown a:hover {
+    background-color: #555;
+    
 }
 
 
@@ -302,6 +303,8 @@ nav a:hover {
     display: inline-block;
     color:#ffffff;
     padding: 10px 20px;
+    font-family: Mark Pro, sans-serif;
+
 
 }
 
@@ -312,6 +315,8 @@ nav a:hover {
     background-color: #000000;
     box-shadow: 0px 8px 16px 0px rgba(94, 94, 94, 0.2);
     z-index: 1;
+    font-family: Mark Pro, sans-serif;
+
 }
 
 .dropdown:hover{
