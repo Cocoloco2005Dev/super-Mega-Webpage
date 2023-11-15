@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Información de los videojuegos</title>
     <link rel="icon" type="image/x-icon"
-        href="https://scontent.feze13-1.fna.fbcdn.net/v/t39.30808-6/302618321_453574030126279_1985943375556077724_n.png?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=v1Olpiy8sJ4AX-vlwKJ&_nc_ht=scontent.feze13-1.fna&oh=00_AfCb7EtrNdIHcQICxdQV-clQOpB6U1cufYAKw25uZcppLA&oe=65592B7A">
+        href="img/logoColegio.png">
 </head>
 
 <body>
@@ -19,33 +19,55 @@
 
         <header>
             <nav>
-                <a href="#">Inicio</a>
+                <a class="toTop" href="javascript:void(0);" onclick="ajustarDesplazamiento('topStart')">Inicio</a>
     
                 <div class="dropdown">
-                    <a>Entorno Personalizable</a>
+                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('owSectStart')">Overwatch</a>
                     <div class="dropdown-content">
-                      <a href="#file:///C:/Users/Cocoloco2005/Desktop/FORRO/Untitled-1.html#">Opción 1</a>
-                      <a href="#">Opción 2</a>
-                      <a href="#">Opción 3</a>
-                    </div>
+                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('owEntorno')">
+                        Entorno personalizable
+                    </a>
+                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('owFormApl')">
+                        Formas de aplicación
+                    </a>
+                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('owLimits')">
+                        Limitaciones
+                    </a>
+                </div>
                 </div>
     
                 <div class="dropdown">
-                    <a>Desarrollo de L.O.L.</a>
+                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('lolSectStart')">
+                        League Of Legends
+                    </a>
                     <div class="dropdown-content">
-                      <a href="#">Opción 1</a>
-                      <a href="#">Opción 2</a>
-                      <a href="#">Opción 3</a>
-                    </div>
+                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('lolComp')">
+                        Competencia
+                    </a>
+                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('lolEsports')">
+                        Esports
+                    </a>
+                </div>
                 </div>
     
                 <div class="dropdown">
-                    <a>Counter Strike</a>
+                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csSectStart')">
+                        Counter Strike
+                    </a>
                     <div class="dropdown-content">
-                      <a href="#">Opción 1</a>
-                      <a href="#">Opción 2</a>
-                      <a href="#">DEVTEST</a>
-                    </div>
+                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csAnticheat')">
+                        Anti-cheat
+                    </a>
+                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csDetectCheat')">
+                        Detección trampas
+                    </a>
+                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csSubtick')">
+                        Subtick
+                    </a>
+                    <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csSubtickNews')">
+                        Novedades Subtick
+                    </a>
+                </div>
                 </div>
     
                 <button onclick="abrirFormulario()">Envia un mail con tu sugerencias!</button>
@@ -56,7 +78,7 @@
 
             <article class="slide-content-principal">
                 <article class="seccionExplicativa">
-                    <h1>Desarrollo, historia y seguridad de los videojuegos</h1>
+                    <h1 id="topStart">Desarrollo, historia y seguridad de los videojuegos</h1>
                     <article class="subtituloExplicativo">
                         <h3>
                             ¿De que va a tratar la pagina?
@@ -93,11 +115,19 @@
 
         <section class="slides slide2" id="id_ow">
             <div class="slide-content-principal">
-                <h1 id="owSectStart">Overwatch</h1>
+            <article class="seccionExplicativa">
+                <h1 id="owSectStart">Overtwatch</h1>
+                <div class="textoExplicativo">
+                    <p>
+                        Overwatch es un juego de disparos en primera persona (FPS) en línea, desarrollado por Blizzard Entertainment. Se destaca por su enfoque en equipos de seis jugadores, cada uno seleccionando un personaje con habilidades únicas. El objetivo varía según el modo de juego, pero generalmente implica cumplir misiones, defender o capturar puntos, y trabajar en conjunto para ganar. 
+                        Combina acción intensa con estrategia y tiene un elenco diverso de héroes para elegir.
+                    </p>
+                </div>
             </div>
+            </article>
             <div class="slide-content-left">
                 <div class="seccionExplicativa">
-                    <h2>Entorno personalizable en Overwatch</h2>
+                    <h2 id="owEntorno">Entorno personalizable en Overwatch</h2>
                     <p>
                         Un aspecto que le da bastante novedad al juego del genero shooter "Overwatch" es la alta tasa de
                         modificacion que se puede lograr al codigo original del juego para crear partidas y entornos
@@ -123,7 +153,8 @@
 
             <div class="slide-content-left">
                 <div class="seccionExplicativa">
-                    <div class="subtituloExplicativo"><h3>Formas de aplicacion</h3></div>
+                    <div class="subtituloExplicativo">
+                        <h3 id="owFormApl">Formas de aplicacion</h3></div>
 
                     <div class="textoExplicativo">
                         <p>
@@ -167,7 +198,7 @@
 
             <div class="slide-content-right">
                 <div class="seccionExplicativa">
-                    <h3>Limitaciones</h3>
+                    <h3 id="owLimits">Limitaciones</h3>
 
                     <div class="textoExplicativo">
                         <p>
@@ -198,16 +229,37 @@
                 </div>
 
             </div>
+
+
+            <article class="slide-content-principal">
+                <article class="seccionExplicativa">
+                    <h2>Conclusión</h2>
+                    <div class="textoExplicativo">
+                        <p>El Overwatch Workshop es una herramienta de creación de contenido que permite a los jugadores personalizar reglas, modos de juego y mecánicas dentro de Overwatch. 
+                            Introducido por Blizzard, este taller brinda a la comunidad la capacidad de diseñar experiencias únicas, desde modos de juego divertidos hasta entrenamientos especializados. Es una forma innovadora de ampliar la diversidad y creatividad en el juego, permitiendo a los jugadores experimentar con nuevas ideas y compartir sus creaciones con la comunidad. 
+                            En esencia, el Workshop ha contribuido significativamente a la versatilidad y longevidad del juego al proporcionar una plataforma para la inventiva de los jugadores.
+                        </p>
+                    </div>
+                </article>
+            </article>
+
+
         </section>
 
 
         <!--LOL-->
         <section class="slides slide3" id="id_lol">
-            <article class="slide-content-principal">
-                <div class="seccionExplicativa">
+            <div class="slide-content-principal">
+                <article class="seccionExplicativa">
                     <h1 id="lolSectStart">League Of Legends</h1>
+                    <div class="textoExplicativo">
+                        <p>
+                            League of Legends (LoL) es un popular juego en línea gratuito, clasificado como un MOBA (Multiplayer Online Battle Arena). Desarrollado por Riot Games, el juego enfrenta a dos equipos de cinco jugadores cada uno, controlando personajes llamados "campeones", con el objetivo de destruir el nexo enemigo ubicado en su base. Cada campeón tiene habilidades únicas y se fortalece durante la partida, adquiriendo oro y experiencia. 
+                            La estrategia, trabajo en equipo y toma de decisiones son fundamentales para ganar partidas en este juego altamente competitivo.    
+                        </p>
+                    </div>
                 </div>
-            </article>
+                </article>
 
             <div class="slide-content-right">
                 <div class="seccionExplicativa">
@@ -226,7 +278,7 @@
             <div class="slide-content-left">
                 <div class="seccionExplicativa">
                     <div class="subtituloExplicativo">
-                        <h2>Competencia</h2>
+                        <h2 id="lolComp">Competencia</h2>
                     </div>
                     <div class="textoExplicativo">
                         <p>
@@ -258,7 +310,7 @@
 
             <div class="slide-content-left">
                 <div class="seccionExplicativa">
-                    <h2>Esports y escena competitiva</h2>
+                    <h2 id="lolEsports">Esports y escena competitiva</h2>
                     <div class="textoExplicativo">
                         <p>
                             League of Legends ha desarrollado una escena competitiva sólida con su liga profesional,
@@ -298,7 +350,8 @@
                     <div class="textoExplicativo">
                         <p>
                             Counter Strike es un juego desarrollado por Valve Corporation, este juego lleva más de 20
-                            años en el mercado.
+                            años en el mercado. First Person Shooter (Juego de disparos en primera persona), con tematica anti-terroristas contra terroristas, equipo de 5 contra 5
+                            donde el primero en llegar a las 16 rondas ganadas gana el juego.
                         </p>
                     </div>
                 </article>
@@ -307,7 +360,7 @@
             <!--Anti Cheats-->
             <div class="slide-content-left" id="id_cs1">
                 <div class="seccionExplicativa">
-                    <h2>Anti-Cheat</h2>
+                    <h2 id="csAnticheat">Anti-Cheat</h2>
                     <h3>¿Que es un anti-cheat?</h3>
                     <div class="textoExplicativo">
                         <p>
@@ -344,7 +397,7 @@
 
             <div class="slide-content-left">
                 <div class="seccionExplicativa">
-                    <h3>Detección</h3>
+                    <h3 id="csDetectCheat">Detección</h3>
                     <div class="textoExplicativo">
                         <p>Cuando el Anti-Cheat detecta a un juador que parece estar haciendo trampa, este toma medidas
                             acordes , puede advertir al jugador y expulsarlo de la partida (muy raro), puede
@@ -376,7 +429,7 @@
             <!--Subticks-->
             <div class="slide-content-left" id="id_cs2">
                 <div class="seccionExplicativa">
-                    <h2>Sistema de Subticks</h2>
+                    <h2 id="csSubtick">Sistema de Subticks</h2>
                     <h3>¿Que es un tick?</h3>
                     <div class="textoExplicativo">
                         <p>
@@ -396,7 +449,7 @@
 
             <div class="slide-content-right">
                 <div class="seccionExplicativa">
-                    <h3>Novedades del subtick</h3>
+                    <h3 id="csSubtickNews">Novedades del subtick</h3>
                     <div class="textoExplicativo">
                         <p>
                             En este nuevo sistema, llamado "sub-ticks", el cliente envía al servidor un código de tiempo

@@ -3,19 +3,15 @@ function abrirFormulario() {
 }
 
 function ajustarDesplazamiento(elementId) {
-    console.log("TEST EXECUTED");
-    var headerHeight = document.querySelector('header').offsetHeight;
-    console.log(headerHeight);
-    var element = document.getElementById(elementId);
-    console.log(element);
-  
+var headerHeight = document.querySelector('header').offsetHeight;
+var element = document.getElementById(elementId);
 
-    if (element) {
-      var offsetTop = element.offsetTop - headerHeight;
-      console.log(offsetTop);
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
-  }
+if (element) {
+var offsetTop = element.offsetTop - headerHeight;
+window.scrollTo({
+    top: offsetTop,
+    behavior: 'smooth'
+});
+}
+}
+

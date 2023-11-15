@@ -242,11 +242,13 @@ body{
 /* CAMBIAR CAMBIAR TEST DEV*/
 
 header {
-    background-color: #333; /* Background color for the header */
-    text-align: center; /* Center-align the contents within the header */
-    padding: 10px; /* Add padding for spacing */
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
     position: fixed;
     width: 100%;
+    top: 0;
+    transition: top 0.3s;
 }
 
 /* Style the navigation links */
@@ -256,13 +258,13 @@ nav {
 }
 
 nav a {
-    text-decoration: none; /* Remove underline from links */
-    color: #fff; /* Text color for links */
-    padding: 10px 20px; /* Add padding to the links for spacing */
+    text-decoration: none; 
+    color: #fff;
+    padding: 10px 20px;
 }
 
 nav a:hover {
-    background-color: #555; /* Background color when hovering over links */
+    background-color: #555; 
 }
 
 
