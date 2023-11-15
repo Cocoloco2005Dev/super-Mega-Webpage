@@ -15,3 +15,14 @@ window.scrollTo({
 }
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+    const imagenContainer = document.querySelector('.imagen-container');
+
+    imagenContainer.addEventListener('mouseenter', function () {
+        imagenContainer.querySelector('img').classList.add('imagen-ampliada');
+    });
+
+    imagenContainer.addEventListener('mouseleave', function () {
+        imagenContainer.querySelector('img').classList.remove('imagen-ampliada');
+    });
+});

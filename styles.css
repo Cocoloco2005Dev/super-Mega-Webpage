@@ -398,3 +398,12 @@ nav dropdown a:hover {
     display: block;
     z-index: 999998;
 }
+
+.contentImageSlide img {
+    transition: transform 0.3s;
+    border-radius: 8px; /* Agrega bordes redondeados a las imágenes */
+}
+
+.contentImageSlide img:hover {
+    transform: scale(1.2); /* Escala la imagen al 120% en hover, puedes ajustar el valor según tus preferencias */
+}
