@@ -43,40 +43,49 @@
     padding: 0;
     font-family: Inter, sans-serif;
     box-sizing: border-box;
+    color-scheme: dark;
 }
 
 p{
     border-radius: 5px;
     font-family: Mark Pro, sans-serif;
-    color:rgba(46, 45, 44, 0.65);
+    color:rgba(204, 199, 192, 0.65);
     background-color: rgb(66, 54, 66);
 }
 
+h1{
+    font-size: 4rem;
+    padding-top: 0px;
+}
+
+h2{background-color: rgb(66, 54, 66);}
 
 h3 {
 
     background: rgba(235, 212, 11, 0.3);
     margin: 10px;
     width: auto;
-    background-color: rgb(66, 54, 66);;
+    background-color: rgb(66, 54, 66);
 }
 
-h2{background-color: rgb(66, 54, 66);;}
+body{
+    /*Eu cock, no era el header el que tenia esa barra toda bugeada fuera de la principal, era
+    el body, yo por las dudas te dejo escrito aca esto*/
+    overflow: show; /*No queremos la barra de overflow aca.*/
+    background-color: #181a1b;
+}
 
 .container{
     box-sizing: border-box;
     word-wrap: break-word;
-    height: 100vh;
-    width: 100%;
-    overflow-y: scroll;
     /*scroll-snap-type: y mandatory; */
 }
 
 
 .slides {
-    width: 100%;
+   
     min-height: calc(100vh - 60px); /* Adjust the value based on your header's height */
-    color: #444343;
+    color: rgb(189, 184, 175);
     scroll-snap-align: start;
 }
 
@@ -87,7 +96,7 @@ h2{background-color: rgb(66, 54, 66);;}
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 0;
     padding-top: 20px;
     
 }
@@ -206,7 +215,6 @@ h2{background-color: rgb(66, 54, 66);;}
 
 
 .slidePrincipial {
-    height: 100vh;
     background-image: url(https://web-assets.esetstatic.com/tn/-x425/wls/2021/08/por-qu%C3%A9-compa%C3%B1%C3%ADas-videojuegos-son-blanco-atractivo-cibercriminales.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -214,8 +222,7 @@ h2{background-color: rgb(66, 54, 66);;}
 }
 
 .slide2{ /*Parte de OW*/
-    background: rgb(93, 17, 233);
-    background: linear-gradient(135deg, rgb(154, 17, 233), rgb(226, 212, 12));
+    background: linear-gradient(0deg, #797e83, #fa9c1e);
     /*background-image: url("/img/owLogo.png");
     background-attachment: scroll;
     background-size: 150px;
@@ -223,11 +230,12 @@ h2{background-color: rgb(66, 54, 66);;}
 }
 
 .slide3{ /*Parte de LOL*/
-    background: linear-gradient(0deg, #0A323C, #166fdd);
+    background: linear-gradient(0deg, #0A323C, #166fdd, #797e83);
+    
 }
 
 .slide4{ /*Parte de CS*/
-    background: linear-gradient(0deg, rgb(80, 3, 3),rgb(206, 110, 20));
+    background: linear-gradient(0deg, rgb(80, 3, 3),rgb(206, 110, 20), #0A323C);
 }
 
 
@@ -238,7 +246,7 @@ header {
     text-align: center; /* Center-align the contents within the header */
     padding: 10px; /* Add padding for spacing */
     position: fixed;
-    width: 98.9%;
+    width: 100%;
 }
 
 /* Style the navigation links */
@@ -255,13 +263,6 @@ nav a {
 
 nav a:hover {
     background-color: #555; /* Background color when hovering over links */
-}
-
-body{
-    /*Eu cock, no era el header el que tenia esa barra toda bugeada fuera de la principal, era
-    el body, yo por las dudas te dejo escrito aca esto*/
-    overflow: hidden; /*No queremos la barra de overflow aca.*/
-    background-color: #181a1b;
 }
 
 

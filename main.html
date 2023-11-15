@@ -5,63 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Trabajo Carlos</title>
+    <title>Información de los videojuegos</title>
     <link rel="icon" type="image/x-icon"
-        href="https://scontent.feze8-1.fna.fbcdn.net/v/t39.30808-6/302618321_453574030126279_1985943375556077724_n.png?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=LOorAz_BrEwAX9eJwnd&_nc_ht=scontent.feze8-1.fna&oh=00_AfB_gV3AYf_7Ywj9p9kDlOpAJaG2oF2R561oDKDUf6HgcQ&oe=654F483A">
+        href="https://scontent.feze13-1.fna.fbcdn.net/v/t39.30808-6/302618321_453574030126279_1985943375556077724_n.png?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=v1Olpiy8sJ4AX-vlwKJ&_nc_ht=scontent.feze13-1.fna&oh=00_AfCb7EtrNdIHcQICxdQV-clQOpB6U1cufYAKw25uZcppLA&oe=65592B7A">
 </head>
 
 <body>
 
     <script src="scripts.js"></script>
-    <header>
-        <nav>
-            <!--<a href="#id_in">Inicio</a>
-            <a href="#">Entorno Personalizable</a>
-            <a href="#">Linea de Tiempo (L.O.L)</a>
-            <a href="#">Anti-Cheats (C.S.)</a>
-            <a href="#">Subticks (C.S.)</a>
-            <button onclick="abrirFormulario()">Envia un mail con tu sugerencias!</button>-->
-            <a href="#">Inicio</a>
-
-            <div class="dropdown">
-                <a>Entorno Personalizable</a>
-                <div class="dropdown-content">
-                  <a href="#file:///C:/Users/Cocoloco2005/Desktop/FORRO/Untitled-1.html#">Opción 1</a>
-                  <a href="#">Opción 2</a>
-                  <a href="#">Opción 3</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <a>Desarrollo de L.O.L.</a>
-                <div class="dropdown-content">
-                  <a href="#">Opción 1</a>
-                  <a href="#">Opción 2</a>
-                  <a href="#">Opción 3</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <a>Counter Strike</a>
-                <div class="dropdown-content">
-                  <a href="#">Opción 1</a>
-                  <a href="#">Opción 2</a>
-                  <a href="#">DEVTEST</a>
-                </div>
-            </div>
-
-            <button onclick="abrirFormulario()">Envia un mail con tu sugerencias!</button>
-        </nav>
-    </header>
+    
 
     <div class="container">
+
+        <header>
+            <nav>
+                <a href="#">Inicio</a>
+    
+                <div class="dropdown">
+                    <a>Entorno Personalizable</a>
+                    <div class="dropdown-content">
+                      <a href="#file:///C:/Users/Cocoloco2005/Desktop/FORRO/Untitled-1.html#">Opción 1</a>
+                      <a href="#">Opción 2</a>
+                      <a href="#">Opción 3</a>
+                    </div>
+                </div>
+    
+                <div class="dropdown">
+                    <a>Desarrollo de L.O.L.</a>
+                    <div class="dropdown-content">
+                      <a href="#">Opción 1</a>
+                      <a href="#">Opción 2</a>
+                      <a href="#">Opción 3</a>
+                    </div>
+                </div>
+    
+                <div class="dropdown">
+                    <a>Counter Strike</a>
+                    <div class="dropdown-content">
+                      <a href="#">Opción 1</a>
+                      <a href="#">Opción 2</a>
+                      <a href="#">DEVTEST</a>
+                    </div>
+                </div>
+    
+                <button onclick="abrirFormulario()">Envia un mail con tu sugerencias!</button>
+            </nav>
+        </header>
         
         <section class="slides slidePrincipial" id="id_in">
 
             <article class="slide-content-principal">
-                <br></br>
                 <article class="seccionExplicativa">
-                    <h2>Desarrollo, historia y seguridad de los videojuegos</h2>
+                    <h1>Desarrollo, historia y seguridad de los videojuegos</h1>
                     <article class="subtituloExplicativo">
                         <h3>
                             ¿De que va a tratar la pagina?
@@ -80,15 +75,15 @@
 
             <div class="slide-content-principal">
             <div class="contentImageSlide">
-                <div class="imageSlide">
+                <a href="javascript:void(0);" onclick="ajustarDesplazamiento('owSectStart')" class="imageSlide">
                     <img class="imageAdentro" src="img/owLogo.png">
-                </div>
-                <div class="imageSlide">
+                </a>
+                <a href="javascript:void(0);" onclick="ajustarDesplazamiento('lolSectStart')" class="imageSlide">
                     <img class="imageAdentro" src="img/lolLogo.png">
-                </div>
-                <div class="imageSlide">
+                </a>
+                <a href="javascript:void(0);" onclick="ajustarDesplazamiento('csSectStart')" class="imageSlide">
                     <img class="imageAdentro" src="img/csLogo.png">
-                </div>
+                </a>
             </div>
             </div> 
 
@@ -98,7 +93,7 @@
 
         <section class="slides slide2" id="id_ow">
             <div class="slide-content-principal">
-                <h1>Overwatch</h1>
+                <h1 id="owSectStart">Overwatch</h1>
             </div>
             <div class="slide-content-left">
                 <div class="seccionExplicativa">
@@ -210,7 +205,7 @@
         <section class="slides slide3" id="id_lol">
             <article class="slide-content-principal">
                 <div class="seccionExplicativa">
-                    <h2>League Of Legends</h2>
+                    <h1 id="lolSectStart">League Of Legends</h1>
                 </div>
             </article>
 
@@ -299,7 +294,7 @@
 
             <article class="slide-content-principal">
                 <article class="seccionExplicativa">
-                    <h1>Counter Strike</h1>
+                    <h1 id="csSectStart">Counter Strike</h1>
                     <div class="textoExplicativo">
                         <p>
                             Counter Strike es un juego desarrollado por Valve Corporation, este juego lleva más de 20
