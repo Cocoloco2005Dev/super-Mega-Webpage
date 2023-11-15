@@ -136,9 +136,12 @@ body{
 }
 
 .seccionExplicativa li{
-
-
-    
+    font-size: 1.25rem;
+    background-color: rgb(56, 65, 110);
+    border:rgb(204, 204, 204) outset;
+    /*border-radius: 100%;*/
+    padding: 5px 10px;
+    margin-bottom: 10px;
 }
 
 .seccionExplicativa h2{
