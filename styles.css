@@ -324,3 +324,13 @@ nav a:hover {
 .footer .g1 .t4 a:hover{
     color: #166fdd;
 }
+
+.footer .g1 .t3 button{
+    display: inline-block;
+    text-decoration: none;
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin: auto;
+}
