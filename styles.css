@@ -195,7 +195,8 @@ body{
     border-radius: 8px;
     margin-left: 20px;
     display: inline-block;
-    height: 80vh;
+    height: 70vh;
+    width: auto;
     margin-bottom: 20px;
 }
 
