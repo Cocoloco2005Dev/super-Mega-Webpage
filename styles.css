@@ -270,12 +270,12 @@ header {
     padding-right: 30%;
 } cagada*/
 
-header marquee{
+.BannerHeadder{
     height:40px;
     width:400px;
-    padding-top: 10px;
+    padding-top: -10px;
     margin-left: 10%;
-    background-color: #166fdd;
+    background-color: #FF1A27;
     text-align: start;
 }
 
