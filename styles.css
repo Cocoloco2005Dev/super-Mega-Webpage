@@ -253,18 +253,23 @@ header {
     z-index: 999999;
 }
 
-header .left{
-    padding-right: 1%;
-}
+/*header .left{
+    padding-right: 30%;
+} cagada*/
 
 header marquee{
+    height:40px;
+    width:400px;
+    padding-top: 10px;
+    margin-left: 10%;
     background-color: #166fdd;
+    text-align: start;
 }
 
 /* Style the navigation links */
 nav {
     display: flex; /* Make the navigation links a flex container */
-    justify-content: center; /* Center-align the navigation links horizontally */
+    justify-content: left; /* Center-align the navigation links horizontally */
 }
 
 nav a {
