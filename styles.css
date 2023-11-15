@@ -147,25 +147,6 @@ body{
     width: 860px;
 }
 
-/*Imagenes*/
-.ImagenesCentro {
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-}
-
-.ImagenesLeft {
-    text-align: left;
-    justify-content: left;
-    align-content: left;
-}
-
-
-.ImagenesRight {
-    text-align: right;
-    justify-content: right;
-    align-content: right;
-}
 
 .contentVideoSlide h1 {
     padding-top: 20px;
@@ -198,6 +179,23 @@ body{
     display: inline-block;
     width: 400px;
     height: 350px;
+    margin-bottom: 20px;
+}
+
+.imageSlideBOX{
+    border-radius: 8px;
+    margin-left: 20px;
+    display: inline-block;
+    width: 400px;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.imageSlideBANNER{
+    border-radius: 8px;
+    margin-left: 20px;
+    display: inline-block;
+    height: 80vh;
     margin-bottom: 20px;
 }
 
@@ -242,6 +240,7 @@ body{
 /* CAMBIAR CAMBIAR TEST DEV*/
 
 header {
+    z-index:99999;
     background-color: #333;
     text-align: center;
     padding: 10px;
