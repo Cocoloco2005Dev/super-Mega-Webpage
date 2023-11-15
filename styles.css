@@ -292,3 +292,35 @@ nav a:hover {
     display:grid;
     justify-content: center;
 }
+
+.footer{
+    width: 100%;
+    background-color: rgb(0, 0, 0)
+}
+
+.footer .g1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.footer .g1 .logofoot figure img{
+    width: 350px;
+}
+
+.footer .g1 .t4 a{
+    display: inline-block;
+    text-decoration: none;
+    width: 65px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.footer .g1 .t4 a:hover{
+    color: #166fdd;
+}
