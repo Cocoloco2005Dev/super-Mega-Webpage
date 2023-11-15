@@ -191,9 +191,13 @@ body{
     margin-bottom: 20px;
 }
 
+.contentImageSlide {
+
+    width: ;
+}
+
 .imageSlideBOX{
     border-radius: 8px;
-    margin-left: 20px;
     display: inline-block;
     width: 400px;
     height: 350px;
