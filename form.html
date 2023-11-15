@@ -25,44 +25,43 @@
     <body>
         <div class="formulario">
             <!--FORMULARIO-->
-            <form id="form_mensaje" method="post">
+            <form action="https://formsubmit.co/72eestn2ldz@gmail.com" method="POST">
                 <ul>
                     <!--Nombre y Apelido-->
-                    <li><label for="name">Nombre y Apellido:</label>
-                    <input type="text" id="name" name="dato_nomape"/></li>
-
+                    <li><label for="dato_nomape">Nombre y Apellido:</label>
+                    <input type="text" id="dato_nomape" name="dato_nomape"/></li>
+    
                     <!--Fecha de Nacimiento-->
-                    <li><label for="name">Fecha de Nacimiento:</label>
-                    <input type="date" id="name" name="dato_fecha"/></li>
+                    <li><label for="dato_fecha">Fecha de Nacimiento:</label>
+                    <input type="date" id="dato_fecha" name="dato_fecha"/></li>
                     
                     <!--DNI-->
-                    <li><label for="name">Numero de Documento:</label>
-                    <input type="text" id="name" name="dato_dni"/></li>
-
+                    <li><label for="dato_dni">Numero de Documento:</label>
+                    <input type="text" id="dato_dni" name="dato_dni"/></li>
+    
                     <!--Telefono-->
-                    <li><label for="name">Telefono en Linea:</label>
-                    <input type="text" id="name" name="dato_tel"/></li>
-
+                    <li><label for="dato_tel">Telefono en Linea:</label>
+                    <input type="text" id="dato_tel" name="dato_tel"/></li>
+    
                     <!--Celular-->
-                    <li><label for="name">Numero de Celular:</label>
-                    <input type="text" id="name" name="dato_cel"/></li>
-
+                    <li><label for="dato_cel">Numero de Celular:</label>
+                    <input type="text" id="dato_cel" name="dato_cel"/></li>
+    
                     <!--Email-->
-                    <li><label for="name">Email:</label>
-                    <input type="email" id="name" name="dato_mail"/></li>
-
+                    <li><label for="dato_mail">Email:</label>
+                    <input type="email" id="dato_mail" name="dato_mail"/></li>
+    
                     <!--Asunto-->
-                    <li><label for="name">Asunto:</label>
-                    <input type="text" id="name" name="dato_asu"/></li>
+                    <li><label for="dato_asu">Asunto:</label>
+                    <input type="text" id="dato_asu" name="dato_asu"/></li>
                     
-                    <!--Mensaje-->
-                    <li><label for="name">Mensaje:</label>
-                    <textarea id="msg" name="dato_mens"></textarea></li>
+                    <!--Mensaje %0A-->
+                    <li><label for="dato_mens">Mensaje:</label>
+                    <textarea id="dato_mens" name="dato_mens"></textarea></li>
                 </ul>
-
-                <center>
-                    <input type="submit" value="Enviar Datos">
-                </center>
+    
+                <center><input type="submit"></center>
+                <!-- <center><input id="enviarDatos" type="button" value="Enviar Datos" onclick="crearMailto();"></center>!-->
             </form>
         </div>
 

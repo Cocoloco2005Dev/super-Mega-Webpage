@@ -49,7 +49,7 @@ p{
     border-radius: 5px;
     font-family: Mark Pro, sans-serif;
     color:rgba(46, 45, 44, 0.65);
-    background-color: violet;
+    background-color: rgb(66, 54, 66);
 }
 
 
@@ -58,10 +58,10 @@ h3 {
     background: rgba(235, 212, 11, 0.3);
     margin: 10px;
     width: auto;
-    background-color: violet;
+    background-color: rgb(66, 54, 66);;
 }
 
-h2{background-color: violet;}
+h2{background-color: rgb(66, 54, 66);;}
 
 .container{
     box-sizing: border-box;
@@ -69,7 +69,7 @@ h2{background-color: violet;}
     height: 100vh;
     width: 100%;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    /*scroll-snap-type: y mandatory; */
 }
 
 
@@ -182,6 +182,28 @@ h2{background-color: violet;}
 .youtubeIframe:hover {
     border: 2px solid #ffffff; /* Add a border when hovering */
   }
+
+.imageSlide{
+    border-radius: 8px;
+    margin-left: 20px;
+    display: inline-block;
+    width: 400px;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.imageAdentro{
+    border: none;
+    border-radius: 15px;
+    width:100%;
+    height:100%;
+    transition: border 0.3s;
+}
+
+.imageAdentro:hover {
+    border: 2px solid #ffffff; /* Add a border when hovering */
+}
+
 
 .slidePrincipial {
     height: 100vh;
